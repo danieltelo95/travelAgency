@@ -1,0 +1,269 @@
+.card {
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 0.5s ease-in-out;
+    border: 0.2rem solid rgb(255, 255, 255);
+  }
+  
+  .background {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    backdrop-filter: blur(0.1rem); /* Desenfoque de fondo */
+    -webkit-backdrop-filter: blur(0.1rem); /* Compatibilidad con navegadores basados en WebKit */
+    border-radius: 1rem; /* Bordes redondeados */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    border: 0.1rem solid rgba(255, 255, 255, 0.3); /* Borde semitransparente */
+}
+
+  
+  .social {
+    position: absolute;
+    right: 50%;
+    bottom: 70%;
+    transform: translate(50%, 50%);
+    transition: all 0.6s ease-in-out;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.1rem;
+  }
+  
+  .social .social-svg {
+    fill: white;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .icon .svg {
+    fill: rgba(255, 255, 255, 0.797);
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .box {
+    position: absolute;
+    padding: 0.4rem;
+    text-align: right;
+    background: rgba(255, 255, 255, 0.389);
+    border-top: 2px solid rgb(255, 255, 255);
+    border-right: 1px solid white;
+    border-radius: 10% 13% 42% 0%/10% 12% 75% 0%;
+    box-shadow: rgba(100, 100, 111, 0.364) -7px 7px 29px 0px;
+    transform-origin: bottom left;
+    transition: all 1s ease-in-out;
+  }
+  
+  
+  .box1 {
+    width: 70%;
+    height: 70%;
+    bottom: -15%;
+    left: -10%;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #ff53d4 60%, #62c2fe 90%);
+    opacity: 1;
+  }
+  
+  .box1:hover .icon .svg {
+    filter: drop-shadow(0 0 5px white);
+  }
+  
+  .box2 {
+    width: 50%;
+    height: 50%;
+    bottom: -10%;
+    left: -10%;
+    transition-delay: 0.2s;
+  }
+  
+  .box2::before {
+    background: radial-gradient(circle at 30% 107%, #91e9ff 0%, #00ACEE 90%);
+  }
+  
+  .box2:hover::before {
+    opacity: 1;
+  }
+  
+  .box2:hover .icon .svg {
+    filter: drop-shadow(0 0 5px white);
+  }
+  
+  .box3 {
+    width: 30%;
+    height: 30%;
+    bottom: -10%;
+    left: -10%;
+    transition-delay: 0.4s;
+  }
+  
+  .box3::before {
+    background: radial-gradient(circle at 30% 107%, #969fff 0%, #b349ff 90%);
+  }
+  
+  .box3:hover::before {
+    opacity: 1;
+  }
+  
+  .box3:hover .icon .svg {
+    filter: drop-shadow(0 0 5px white);
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .card:hover .box {
+    bottom: -1px;
+    left: -1px;
+  }
+  
+  .card:hover .social {
+    transform: translate(80px, -20px);
+    letter-spacing: 0px;
+  }
+
+
+  .logo {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .logo .bloom-container {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    background: none;
+  }
+  
+  .logo .bloom-container .logo-container-main {
+    width: 7rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    place-content: center;
+    border-right: 0.2rem solid white;
+    border-left: 0.2rem solid rgba(128, 128, 128, 0.147);
+    transform: rotate(-45deg);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .logo .bloom-container .logo-container-main .logo-inner {
+    height: 4.5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    box-shadow:#ece5dd50 -10px 5px 10px 0px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .logo .bloom-container .logo-container-main .logo-inner .back {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: linear-gradient(
+      60deg,
+      #075e54 30%,
+      #128c7e 60%
+    );
+  }
+  
+  .logo .bloom-container .logo-container-main .logo-inner .front {
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    background: linear-gradient(
+      85deg,
+      #25d366 50%,
+      #dcf8c6 96%
+    );
+    display: grid;
+    place-content: center;
+  }
+  
+  .logo .bloom-container .logo-container-main .logo-inner .front .svg {
+    fill: #ffffff;
+    opacity: 0.5;
+    width: 30px;
+    aspect-ratio: 1;
+    transform: rotate(45deg);
+    transition: all 0.2s ease-in;
+  }
+  
+  .logo .bloom-container .logo-container-main .logo-glass {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.888) 100%
+    );
+    transform: translate(0%, -50%) rotate(0deg);
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .logo .bloom-container .bloom {
+    height: 0.1rem;
+    width: 0.rem;
+    position: absolute;
+    background: white;
+  }
+  
+  .logo .bloom-container .bloom1 {
+    top: 10px;
+    right: 20px;
+    box-shadow:
+      rgb(255, 255, 255) 0px 0px 5px 5px,
+      rgb(255, 255, 255) 0px 0px 15px 15px;
+  }
+  
+  .logo .bloom-container .bloom2 {
+    bottom: 10px;
+    left: 20px;
+    box-shadow:
+      rgba(255, 255, 255, 0.5) 0px 0px 5px 5px,
+      rgba(255, 255, 255, 0.5) 0px 0px 30px 15px;
+  }
+  
+  .logo .bloom-container:hover {
+    transform: scale(1.1);
+  }
+  
+  .logo .bloom-container:hover .logo-container-main .logo-glass {
+    transform: translate(0%, -40%);
+  }
+  
+  .logo
+    .bloom-container:hover
+    .logo-container-main
+    .logo-inner
+    .front
+    .svg {
+    opacity: 1;
+    filter: drop-shadow(0 0 10px white);
+  }
+  
+  .logo .bloom-container:active {
+    transform: scale(0.7);
+  }
+  
+  .logo .bloom-container:active .logo-container-main .button-inner {
+    transform: scale(1.2);
+  }
+
+  .imagenlogo {
+    filter: brightness(0) invert(1);
+  }

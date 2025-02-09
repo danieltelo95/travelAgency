@@ -1,0 +1,10 @@
+.custom {
+  background-color: #5967E3;
+  color: #5967E3; /* Color aplicado al path del SVG */
+  opacity: 0.5; /* Opacidad compartida entre el fondo y el path */
+}
+
+.custom-fill {
+  fill: #5967E3;
+  opacity: 0.5;
+}

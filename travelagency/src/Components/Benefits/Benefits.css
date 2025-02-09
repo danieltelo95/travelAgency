@@ -1,0 +1,46 @@
+.benefitCard {
+  position: relative;
+  width: 22rem;
+  height: 12rem;
+  box-sizing: border-box;
+  background-color: #21b8ef71;
+  border: 0.1rem solid #cbd5e14f;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    rgba(0, 0, 0, 0.23) 0px 6px 6px,
+    inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
+    inset rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all ease-in-out 0.3s;
+  overflow: hidden;
+
+}
+
+.benefitCard:hover {
+  box-shadow: #59E3DC 0.1rem 0.1rem 1rem,
+    #A4BEE3 0px 6px 6px,
+    inset rgba(0, 0, 0, 0.19) 0px 1rem 1rem,
+    inset rgba(0, 0, 0, 0.23) 0px 0.1rem 1rem;
+  border: 5px solid #b671d668;
+
+}
+
+.animate-square {
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
