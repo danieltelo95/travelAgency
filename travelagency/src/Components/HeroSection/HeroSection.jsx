@@ -17,7 +17,9 @@ const HeroSection = () => {
           Descubre destinos increíbles, vive experiencias únicas y viaja con el respaldo de expertos.
         </p>
         <a
-          href="#services"
+          href="https://wa.link/qwlrxc"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hero-btn bg-primary text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-secondary transition-colors"
         >
           ¡Comienza tu Aventura!
